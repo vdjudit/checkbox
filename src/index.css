@@ -46,7 +46,7 @@ label span {
   border-radius: 6px;
   cursor: pointer;
 }
-label span ::after {
+label span::after {
   content: '';
   position: absolute;
   left: 24px;
