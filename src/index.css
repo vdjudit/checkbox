@@ -46,7 +46,7 @@ label span {
   border-radius: 6px;
   cursor: pointer;
 }
-label span ::after{
+label span ::after {
   content: '';
   position: absolute;
   left: 24px;
@@ -55,5 +55,12 @@ label span ::after{
   height: 40px;
   border: solid #00ff0a;
   border-width: 0 6px 6px 0;
-  
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: width 0.5s, height 0.5s, opacity 0.5s;
+}
+input:checked ~ span::after {
+  width: 20px;
+  height: 40px;
+  opacity: 1;
 }
